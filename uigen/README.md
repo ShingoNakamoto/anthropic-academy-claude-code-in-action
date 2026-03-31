@@ -1,67 +1,67 @@
 # UIGen
 
-AI-powered React component generator with live preview.
+AIを活用したReactコンポーネントジェネレーター（ライブプレビュー付き）。
 
-## Prerequisites
+## 前提条件
 
-- Node.js 18+
+- Node.js 18以上
 - npm
 
-## Setup
+## セットアップ
 
-1. **Optional** Edit `.env` and add your Anthropic API key:
+1. **任意** `.env` を編集して、AnthropicのAPIキーを追加します：
 
 ```
 ANTHROPIC_API_KEY=your-api-key-here
 ```
 
-The project will run without an API key. Rather than using a LLM to generate components, static code will be returned instead.
+APIキーがなくてもプロジェクトは動作します。LLMでコンポーネントを生成する代わりに、静的なコードが返されます。
 
-2. Install dependencies and initialize database
+2. 依存関係のインストールとデータベースの初期化
 
 ```bash
 npm run setup
 ```
 
-This command will:
+このコマンドは以下を実行します：
 
-- Install all dependencies
-- Generate Prisma client
-- Run database migrations
+- すべての依存関係をインストール
+- Prismaクライアントを生成
+- データベースのマイグレーションを実行
 
-## Running the Application
+## アプリケーションの起動
 
-### Development
+### 開発環境
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+[http://localhost:3000](http://localhost:3000) を開いてください
 
-## Usage
+## 使い方
 
-1. Sign up or continue as anonymous user
-2. Describe the React component you want to create in the chat
-3. View generated components in real-time preview
-4. Switch to Code view to see and edit the generated files
-5. Continue iterating with the AI to refine your components
+1. サインアップするか、匿名ユーザーとして続ける
+2. 作成したいReactコンポーネントをチャットで説明する
+3. リアルタイムプレビューで生成されたコンポーネントを確認する
+4. コードビューに切り替えて生成されたファイルを確認・編集する
+5. AIとの対話を続けてコンポーネントを改善する
 
-## Features
+## 機能
 
-- AI-powered component generation using Claude
-- Live preview with hot reload
-- Virtual file system (no files written to disk)
-- Syntax highlighting and code editor
-- Component persistence for registered users
-- Export generated code
+- Claudeを使用したAI駆動のコンポーネント生成
+- ホットリロード付きライブプレビュー
+- 仮想ファイルシステム（ディスクへの書き込みなし）
+- シンタックスハイライトとコードエディター
+- 登録ユーザー向けコンポーネント永続化
+- 生成したコードのエクスポート
 
-## Tech Stack
+## 技術スタック
 
-- Next.js 15 with App Router
+- Next.js 15（App Router）
 - React 19
 - TypeScript
 - Tailwind CSS v4
-- Prisma with SQLite
+- PrismaとSQLite
 - Anthropic Claude AI
 - Vercel AI SDK
